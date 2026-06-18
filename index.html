@@ -1,48 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FocusFlow Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <div class="container">
-        <header>
-            <h1 id="greeting">Hello!</h1>
-            <button id="theme-toggle">Switch Theme</button>
-        </header>
-
-        <section class="todo-section">
-            <div class="input-group">
-                <input type="text" id="task-input" placeholder="What needs to be done?">
-                <button id="add-btn">Add Task</button>
-            </div>
-            
-            <ul id="task-list"></ul>
-        </section>
-
-        <div class="stretch-goals">
-            <h3>🚀 Level Up Challenges</h3>
-            <ul class="challenge-checklist">
-                <li>
-                    <input type="checkbox" id="goal-1" disabled>
-                    <label>Add "Strike-through" on click</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="goal-2" disabled>
-                    <label>Save to LocalStorage</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="goal-3" disabled>
-                    <label>Add a "Clear All" button</label>
-                </li>
-            </ul>
+      <header>
+        <h1 id="greeting">Hello!</h1>
+        <div class="quote-container">
+          <p id="quote-text">"Loading your daily dose of inspiration..."</p>
+          <p id="quote-author"></p>
         </div>
+        <button id="theme-toggle">Switch Theme</button>
+      </header>
+
+      <section class="todo-section">
+        <div class="input-group">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="What needs to be done?"
+          />
+          <button id="add-btn">Add Task</button>
+        </div>
+
+        <ul id="task-list"></ul>
+      </section>
+
+      <div class="stretch-goals">
+        <h3>🚀 Level Up Challenges</h3>
+        <ul class="challenge-checklist">
+          <li>
+            <input type="checkbox" id="goal-1" disabled />
+            <label>Add "Strike-through" on click</label>
+          </li>
+          <li>
+            <input type="checkbox" id="goal-2" disabled />
+            <label>Save to LocalStorage</label>
+          </li>
+          <li>
+            <input type="checkbox" id="goal-3" disabled />
+            <label>Add a "Clear All" button</label>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
